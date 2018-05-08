@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box
+}
+
+body{
+    background-attachment: fixed
+}
+header{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    background-color: rgb(39, 100, 100);
+    width: 100%;
+    z-index: 1;
+    border-bottom: 5px;
+    border-bottom-color: orange;
+    border-style: solid
+    }
+
+a:link{
+    text-decoration: none
+}
+
+.header{
+    width: 960px;
+    margin:auto;
+
+}
+
+.myname{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40pt;
+    letter-spacing: 15px ;
+    position: relative;
+    top: 43px;
+    color: lightgray;
+}
+.headbutt{ 
+    font-family: 'Open Sans Condensed', sans-serif;
+    float: right;
+    position: relative;
+    top: 71px;
+    z-index: 0;
+    background-color: rgb(39, 100, 100);
+    letter-spacing: 2px
+}
+
+#headbutt1:hover,
+#headbutt2:hover,
+#headbutt3:hover{
+    background-color: darkgray
+}
+
+#headbutt1,
+#headbutt2,
+#headbutt3{
+color: lightgrey;
+padding: 5px
+}
+
+#headbutt1,
+#headbutt2,
+#headbutt3{
+    border-left: darkgray;
+    border-style: solid;
+}
+
+
+.myname{
+    float: left;
+}
+
+.content{
+    clear: both;
+    width: 960px;
+    margin: auto;
+    z-index: -1;
+    margin-top: 165px;
+    margin-bottom: 70px;
+    background-color: rgba(47,79,79,.6);
+    padding: 25px
+    
+}
+
+#about{
+    color: whitesmoke;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 8px;
+    font-size: 26pt;
+    width: 860px;
+    margin: auto;
+    padding:15px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    margin-bottom: 30px;
+
+}
+
+p{
+    color: whitesmoke;
+    line-height: 1.6;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+#mepic{
+    float: left;
+    margin-right:10px;
+}
+
+.portpic1{
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -318px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.portpic2{
+    position: relative;
+    top: -203px;
+    right: 0;
+    bottom: 0;
+    left: -58px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.portpic3{
+    position: relative;
+    top: -172px;
+    right: 0;
+    bottom: 0;
+    left: -318px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.portpic4{
+    position: relative;
+    top: -375px;
+    right: 0;
+    bottom: 0;
+    left: -58px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.portpic5{
+    position: relative;
+    top: -343px;
+    right: 0;
+    bottom: 0;
+    left: -318px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.portimg{
+    height:200px;
+    width: 200px;
+}
+
+.porttext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 155%);
+    padding: 5px;
+    width: 200px;
+    background-color: rgba(39, 100, 100, .7);
+    font-family: 'Open Sans Condensed', sans-serif;;
+    letter-spacing: 3px
+}
+
+#contact{
+    color:whitesmoke;
+    line-height: 2;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+textarea[name=message]{
+    width: 500px;
+    height: 300px;
+}
+
+input[type=submit]{
+    background-color: rgb(39, 100, 100);
+    color: lightgrey;
+    padding: 5px
+}
+
+input[type=submit]:not(:active){
+
+    border-style:none
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background-color: rgb(39, 100, 100);
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    color:lightgrey;
+    border-top-style: solid;
+    border-top-color: orange;
+    border-top-width: 3px
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .header{
+    Width: 100%;
+    text-align:center;
+}
+
+header{
+    height: 196px;
+}
+
+.myname,.headbutt{
+    float: none;
+    clear:both;
+    position: relative 0;
+}
+
+.myname{
+    font-size:50pt;
+}
+
+.content{
+    width: 90%;
+    margin-top: 220px;
+}
+
+#about{
+    font-size: 44pt
+}
+.headbutt{
+    font-size:32pt;
+    width:100%;
+}
+
+.portimg{
+  height: 400px;
+  width: 400px;
+}
+
+.porttext{
+    width: 400px;
+    font-size: 40px;
+}
+
+.portpic1, .portpic2, .portpic3, .portpic4, .portpic5{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 15px
+}
+form{
+    font-size: 40pt;
+}
+
+input[type=text], textarea{
+    width: 70%;
+    height:auto;
+    font-size: 30pt;
+}
+
+input[type=submit]{
+    font-size: 28pt
+}
+}
+
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        }
+
